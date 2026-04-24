@@ -5,7 +5,7 @@ from weasyprint import HTML
 with open("data/github_data.json") as f:
     data = json.load(f)
 
-with open("templates/resume.html") as f:
+with open("template/resume.html") as f:
     template = Template(f.read())
 
 output = template.render(**data)
